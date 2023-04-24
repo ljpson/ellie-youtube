@@ -4,10 +4,10 @@ import SearchHeaher from "./components/SearchHeaher";
 function App() {
   return (
     <div>
-      <div style={{backgroundColor: 'lightgrey'}}>
+      <div>
       <SearchHeaher />
       </div>
-      <div style={{backgroundColor: 'lightyellow'}}>
+      <div>
       <Outlet />
       </div>
   </div>

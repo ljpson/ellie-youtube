@@ -17,16 +17,16 @@ export default function SearchHeaher() {
     useEffect(() => {setText(keyword || '')}, [keyword])
 
     return (
-        <header>
-            <div>
-                <Link to='/'>
-                    <BsYoutube />
-                    <h1 className='text-2xl'>Youtube</h1>
-                </Link>
-            </div>
-            <form onSubmit={handleSubmit}>
-                <input type='text' placeholder='Search...' value={text} onChange={handleChange}/>
-                <button><BsFillSearchHeartFill /></button>
+        <header className='w-full flex p-4 text-2xl border-b border-zinc-600 mt-4'>
+            <Link to='/' className='flex items-center'>
+                <BsYoutube className='text-4xl text-brand'/>
+                <h1 className='font-bold ml-2 text-3xl'>Youtube</h1>
+            </Link>
+            <form className='w-full flex justify-center' onSubmit={handleSubmit}>
+                <input
+                    className='w-7/12 p-2 outline-none bg-black text-gray-50' 
+                    type='text' placeholder='Search...' value={text} onChange={handleChange}/>
+                <button className='bg-zinc-600 px-4 text-gray-300'><BsFillSearchHeartFill /></button>
             </form>
         </header>
     )
