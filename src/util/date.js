@@ -1,4 +1,4 @@
-import { format, render, cancel, register } from 'timeago.js';
+import { format, register } from 'timeago.js';
 import koLocale from 'timeago.js/lib/lang/ko';
 
 register('ko', koLocale);
